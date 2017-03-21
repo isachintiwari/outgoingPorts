@@ -36,21 +36,21 @@ func main() {
 		flag.PrintDefaults()
 		os.Stderr.WriteString(`Examples
   check from ports 1 to 65535
-        outPorts all
+        outgoingPorts all
   check from ports 20-30 and then 40-50
-        outPorts 20-30 40-50
+        outgoingPorts 20-30 40-50
   check from ports 20-10 and then 40-10
-        outPorts 20-10 40-10
+        outgoingPorts 20-10 40-10
   check port 25
-        outPorts 25
+        outgoingPorts 25
   check from ports 1-65535 and only display failure
-        outPorts allf
+        outgoingPorts allf
   check from ports 20-25 and only display success
-        outPorts 20-25s
+        outgoingPorts 20-25s
   check from ports 20-25 and display only success, 
   then ports 30-35 and only display failure, 
   then ports 40-50 and display both. 
-        outPorts 20-25s 30-35f 40-50
+        outgoingPorts 20-25s 30-35f 40-50
 `)
 	}
 	var (
